@@ -1,10 +1,10 @@
 package main.java;
 
-public class String {
+public class Cadena {
 
 	public static void main(java.lang.String[] args) {
-		
-		String nombre;
+
+		String nombre = "programacion";
 
 	}
 
