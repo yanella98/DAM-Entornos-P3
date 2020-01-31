@@ -2,23 +2,28 @@ package main.java;
 
 public class Array {
 	
-	public static String NumeroMax(int []array) {
-		int mayor = array[0];
-		String max;
-		for(int i = 0; i < array.length; i++){
-			if(mayor < array[i])
-			{
-				mayor = array[i];
-			}
-		}
-		max = "El valor máximo es " + mayor;
-		return max;
-	}
-
+	
 	public static void main(String[] args) {
 		int[]array = {5,4,8,6,3,2,9};
-		System.out.println(NumeroMax(array));
+		
+		System.out.println("El valor mínimo es: " + NumeroMin(array));
 		
 	}
+	
+	
+	public static int NumeroMin(int []num){
+		
+		int min;
+		min=num[0];
+		for(int i = 0; i < num.length; i++){
+			if(min>num[i]){
+				min=num[i];
+			}
+		}
+	
+		return min;
+	}
+
+	
 
 }
