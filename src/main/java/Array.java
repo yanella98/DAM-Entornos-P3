@@ -10,6 +10,7 @@ public class Array {
 		
 		System.out.println("El valor mínimo es: " + NumeroMin(array));
 		mediana(array);
+		NumeroMax(array);
 	}
 	
 	
@@ -38,6 +39,20 @@ public class Array {
 			 total2 = (array[mediana-1] + array[mediana])/2;
 			 System.out.println("La mediana es:" +total2);
 		 }
+	}
+	
+	
+	public static String NumeroMax(int []array) {
+		int mayor = array[0];
+		String max;
+		for(int i = 0; i < array.length; i++){
+			if(mayor < array[i])
+			{
+				mayor = array[i];
+			}
+		}
+		max = "El valor máximo es " + mayor;
+		return max;
 	}
 	
 
