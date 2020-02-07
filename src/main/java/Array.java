@@ -10,7 +10,7 @@ public class Array {
 		
 		System.out.println("El valor mínimo es: " + NumeroMin(array));
 		mediana(array);
-		NumeroMax(array);
+		System.out.println(NumeroMax(array));
 	}
 	
 	
