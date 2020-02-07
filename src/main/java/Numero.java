@@ -11,11 +11,11 @@ public class Numero {
 		int numero = 8;
 		
 
-	
+		
 
 		factorial(numero);
 
-
+		numeroPrimo(numero);
 	}//MAIN
 	
 
@@ -33,7 +33,26 @@ public class Numero {
 		System.out.println("El factorial de " + num + " es " + fact);
 
 	}
-		
+	
+	public static void numeroPrimo(int num) {	        
+		 
+        int contador = 0;
+ 
+        for(int I = 1; I <= num; I++)
+        {
+            if((num % I) == 0)
+            {
+                contador++;
+            }
+        }
+ 
+        if(contador <= 2)
+        {
+            System.out.println("El numero " + num + " es primo");
+        }else{
+            System.out.println("El numero "+ num + " no es primo");
+        }
+}
 
 
 }//CLASS
